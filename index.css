@@ -1,0 +1,84 @@
+.container{
+	width: 100%;
+	background:blue;
+	height:200px;
+	border: 10px;
+	border-left-style: dotted;
+	border-top-color: blue;
+	border-right-color: red;
+	margin: 20px;	
+	display: flex;
+	flex-wrap: wrap;
+}
+.container .firstchild{
+	font-weight: bolder;
+	background: yellow;
+	height : 10vh;
+	width: 33%;
+	text-align: center;
+    display: inline-block;
+}
+.container .secondchild{
+	font-weight: bolder;
+	background: violet;
+	height : 10vh;
+	width: 33%;
+	text-align: center;
+display: inline-block;
+}
+.container .thirdchild{
+	font-weight: bolder;
+	background: green;
+	height : 10vh;
+	width: 30%;
+	text-align: center;
+	display: inline-block;
+}
+
+@media screen and (min-width: 700px)
+{
+	.container{
+		background: indigo
+			}
+			.container .firstchild{
+				background: orange
+			}
+}
+
+@media screen and (max-width: 400px){
+	.container{
+		background: black;
+	}
+	.container .thirdchild{
+		background: yellow;
+		width: 100%
+	}
+	.container .firstchild{
+		background: red;
+		width: 100%
+	}
+	.container .secondchild{
+		background: maroon;
+		width: 100%
+	}
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px){
+	.container{
+		background: black;
+	}
+	.container .thirdchild{
+		background: yellow;
+		width: 100%
+	}
+	.container .firstchild{
+		background: red;
+		width: 50%
+	}
+	.container .secondchild{
+		background: maroon;
+		width: 50%
+	}
+
+
+}
